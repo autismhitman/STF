@@ -9,7 +9,8 @@ import org.testng.annotations.Test;
 
 import com.ui.pages.HomePage;
 
-@Listeners({ com.ui.listeners.MyTestListener.class, com.ui.listeners.MyTransformer.class  }) 
+@Listeners({ com.ui.listeners.MyTestListener.class, com.ui.listeners.MyTransformer.class ,
+	          com.ui.listeners.MyMethodInterceptor.class }) 
 public class LoginTest extends BaseTest {
 
 	

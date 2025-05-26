@@ -5,6 +5,7 @@
 <listeners>
     <listener class-name="com.ui.listeners.MyTestListener" />
     <listener class-name="com.ui.listeners.MyTransformer" />
+    <listener class-name="com.ui.listeners.MyMethodInterceptor"/>
 </listeners>
 
 	<parameter name="browserName"  value="${browserName}"/>

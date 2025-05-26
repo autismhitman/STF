@@ -5,10 +5,7 @@ import org.apache.logging.log4j.Logger;
 
 public class LoggerUtil {
 
- 
-	
-	private LoggerUtil () {
-		
+ 	private LoggerUtil () {		
 		
 	}
 	

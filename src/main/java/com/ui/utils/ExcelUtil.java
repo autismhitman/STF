@@ -10,15 +10,20 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 public class ExcelUtil {
 	
 	
-	private static XSSFWorkbook wb;
-	private static XSSFSheet sh;
+	 XSSFWorkbook wb;
+	 XSSFSheet sh;
 	
 	public ExcelUtil(String filePath, String sheetName) {
-		File file = new File(filePath);
+		
+		
 		try {
+			
+			File file = new File(filePath);
 			wb = new XSSFWorkbook(file);
 			sh= wb.getSheet(sheetName);
-		} catch (InvalidFormatException e) {
+			
+		} 
+		  catch (InvalidFormatException e) {
 		 
 			e.printStackTrace();
 		} catch (IOException e) {
@@ -29,6 +34,7 @@ public class ExcelUtil {
 	}
 	
 	public int getRowCount() {
+		
 		return sh.getLastRowNum();
 	}
 	
