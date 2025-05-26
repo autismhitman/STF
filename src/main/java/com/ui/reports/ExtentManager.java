@@ -14,8 +14,8 @@ public class ExtentManager {
 	}
 
 	public static void setExtentTest(ExtentTest extentTestRef) {
-		  
 		if(Objects.nonNull(extentTestRef)) {
+		  
 			extentTest.set(extentTestRef);
 		}
 	}

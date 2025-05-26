@@ -3,14 +3,15 @@
 <suite name="Suite">
 
 <listeners>
- <listener class-name="com.ui.listeners.MyTestListener"/>
-
+    <listener class-name="com.ui.listeners.MyTestListener" />
+    <listener class-name="com.ui.listeners.MyTransformer" />
 </listeners>
 
 	<parameter name="browserName"  value="${browserName}"/>
 	<parameter name="isRemote"  value="${isRemote}"/>
    <test thread-count="5" name="Test">
-    <classes>       
+    <classes>
+            
       <class name="com.ui.tests.LoginTest"/>
     </classes>
   </test> <!-- Test -->

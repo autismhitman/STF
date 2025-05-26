@@ -31,7 +31,7 @@ public class MyTestListener implements ITestListener, ISuiteListener {
 	public void onTestStart(ITestResult result) {
 		
 		 logger.info("Starting the testCase "+ result.getMethod().getMethodName());
-		 ExtentReport.createTest(result.getMethod().getMethodName());
+		 ExtentReport.createTest((result.getMethod().getDescription()));
 
 	}
 

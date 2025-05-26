@@ -27,8 +27,9 @@ public class ExtentReport {
 	public static void flushReport() {
 		if(Objects.nonNull(extentReports)) {
 			extentReports.flush();
+			
 		}
-		
+		ExtentManager.unload();
 	}
 	
 	public static void createTest(String testName) {
